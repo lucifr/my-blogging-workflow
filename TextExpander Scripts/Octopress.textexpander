@@ -1,64 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>groupInfo</key>
-	<dict>
-		<key>expandAfterMode</key>
-		<integer>0</integer>
-		<key>groupName</key>
-		<string>Octopress</string>
-	</dict>
-	<key>snippetsTE2</key>
-	<array>
-		<dict>
-			<key>abbreviation</key>
-			<string>,,tag</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-08-16T06:46:57Z</date>
-			<key>flags</key>
-			<integer>1</integer>
-			<key>label</key>
-			<string>Octopress tags</string>
-			<key>lastUsed</key>
-			<date>2012-08-18T14:59:52Z</date>
-			<key>modificationDate</key>
-			<date>2012-08-18T14:31:45Z</date>
-			<key>plainText</key>
-			<string>set thePath to "/Users/Lucifr/octopress/public/tags"tell application "Finder"	set file_list to name of every folder of folder (thePath as POSIX file)end tellset tag_list to (choose from list file_list with title "Tags" with prompt "Choose the tag(s):" OK button name "OK" cancel button name "Cancel" with multiple selections allowed)set item_list to ""repeat with i from 1 to the count of tag_list	set item_list to (item_list &amp; return &amp; tab &amp; "- " &amp; the item i of the tag_list)end repeatreturn item_list</string>
-			<key>snippetType</key>
-			<integer>2</integer>
-			<key>useCount</key>
-			<integer>14</integer>
-			<key>uuidString</key>
-			<string>645F6D2C-2829-415A-AE7E-BA058FBA56E3</string>
-		</dict>
-		<dict>
-			<key>abbreviation</key>
-			<string>,,cat</string>
-			<key>abbreviationMode</key>
-			<integer>0</integer>
-			<key>creationDate</key>
-			<date>2012-08-16T06:46:57Z</date>
-			<key>flags</key>
-			<integer>1</integer>
-			<key>label</key>
-			<string>Octopress categories</string>
-			<key>lastUsed</key>
-			<date>2012-08-18T14:31:23Z</date>
-			<key>modificationDate</key>
-			<date>2012-08-18T14:06:46Z</date>
-			<key>plainText</key>
-			<string>set thePath to "/Users/Lucifr/octopress/public/category"tell application "Finder"	set file_list to name of every folder of folder (thePath as POSIX file)end tellset cat_list to (choose from list file_list with title "Categories" with prompt "Choose the category(ies):" OK button name "OK" cancel button name "Cancel" with multiple selections allowed)set item_list to ""repeat with i from 1 to the count of cat_list	set item_list to (item_list &amp; return &amp; tab &amp; "- " &amp; the item i of the cat_list)end repeatreturn item_list</string>
-			<key>snippetType</key>
-			<integer>2</integer>
-			<key>useCount</key>
-			<integer>10</integer>
-			<key>uuidString</key>
-			<string>E19A8AF2-CD82-456B-B6E3-D8A2E67E9305</string>
-		</dict>
-	</array>
-</dict>
-</plist>
